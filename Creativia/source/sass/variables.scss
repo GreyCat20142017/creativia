@@ -1,0 +1,45 @@
+// Вещи, характерные только для препроцессора(названия переменных и параметров примесей) осознанно сделала со слитным написанием, но единообразно
+$basewhite: rgb(255, 255, 255);
+$baseblack: rgb(17, 17, 17);
+
+$basered: red;
+$hoverred: rgb(60, 35, 40);
+
+$basemaroon: rgb(58, 30, 36);
+
+$basegrey: rgb(242, 242, 242);
+$hovergrey: rgb(235, 235, 235);
+
+$almostblack: rgb(34, 34, 34);
+$almostwhite: rgb(247, 247, 247);
+
+$lightgrey:  rgb(164, 164, 164);
+$middlegrey: rgb(80, 80, 80);
+$darkgrey: rgb(50, 50, 50);
+
+$cardgreen:  rgb(85, 205, 131);
+$cardblue: rgb(31, 177, 202);
+$cardpink: rgb(239, 93, 137);
+$cardorange: rgb(243, 154, 65);
+$cardgrey: rgb(150, 166, 166);
+$cardbeige: rgb(246, 240, 225);
+
+$postgreen: rgb(172, 230, 192);
+$postblue:  rgb(31, 177, 202);
+
+$basefontsize: 14px;
+$baselineheight: 18px;
+
+$standartsize: 20px;
+
+$ralewayfont: "Raleway", "Tahoma", sans-serif;
+$latofont: "Lato", "Arial", sans-serif;
+
+$mobilewidth: 320px;
+$mobilewidthonly: 767px;
+$tabletwidth: 768px;
+$desktopwidth: 1200px;
+$desktopwidewidth: 1400px;
+
+$retinadpi: 144dpi;
+$retinadppx: 1.5dppx;

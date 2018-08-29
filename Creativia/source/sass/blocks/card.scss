@@ -1,0 +1,57 @@
+.card {
+  padding: 0;
+  font-family: $latofont;
+  text-align: center;
+  box-shadow: 0 0 1px 0 opacify(darken($almostwhite, 15%), 0.3);
+}
+
+.card__details {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card__detail {
+  padding: 12px 0;
+  font-size: 16px;
+  box-shadow: 0 0 1px 0 opacify(darken($almostwhite, 15%), 0.3);
+}
+
+.card__link {
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.card__label {
+  margin: 0;
+  padding: 10px;
+  font-size: 20px;
+  color: $basewhite;
+  text-transform: uppercase;
+  background-color: black;
+}
+
+.card__price {
+  display: block;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 50px;
+  color: $darkgrey;
+  text-decoration: none;
+  background-color: $almostwhite;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $basewhite;
+    background-color: $basered;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.card__period {
+  font-size: 16px;
+}

@@ -1,0 +1,55 @@
+.footer {
+  background-color: $darkgrey;
+  color: $basewhite;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer__info {
+  @include fix-IE-bug(40px);
+
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  min-height: 40px;
+  width: 100%;
+  justify-content: center;
+
+  &--wide {
+    background-color: white;
+    color: darkgrey;
+  }
+}
+
+
+.footer__copyright {
+  font-family: $latofont;
+  font-size: 16px;
+  line-height: 25px;
+  color: rgb(142, 142, 142);
+}
+
+.footer__logo--image {
+  display: block;
+}
+
+
+@media (min-width: $tabletwidth) {
+  .footer__info {
+    &--wide {
+      @include fix-IE-bug(40px);
+      min-height: 40px;
+    }
+
+    &--long {
+      width: 66.5%;
+      justify-content: flex-end;
+    }
+
+    &--normal {
+      width: 33.5%;
+      justify-content: flex-end;
+    }
+  }
+}
+

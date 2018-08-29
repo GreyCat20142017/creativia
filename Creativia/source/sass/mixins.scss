@@ -1,0 +1,19 @@
+@mixin fix-IE-bug($height) {
+  &::before {
+    content: "";
+    display: inline-block;
+    min-height: $height;
+    visibility: hidden;
+  }
+}
+
+@mixin shift-order($height) {
+  order: -1;
+}
+
+@mixin v-zero() {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}

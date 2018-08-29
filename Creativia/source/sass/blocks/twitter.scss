@@ -1,0 +1,66 @@
+.twitter {
+  @include v-zero();
+  color: $basewhite;
+  background-color: $darkgrey;
+  text-align: center;
+  position: relative;
+}
+
+.twitter__layout {
+  color: $middlegrey;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("../img/sprite-2.svg#icon-twitter");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 182px 205px;
+  background-origin: border-box;
+}
+
+.twitter__text {
+  width: 90%;
+  padding: 10px;
+  margin: 20px auto;
+  color: $basewhite;
+  font-family: $latofont;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.twitter__link:active {
+  opacity: 0.3;
+}
+
+.twitter__icon {
+  fill: $basewhite;
+}
+
+.twitter__link:focus {
+  box-shadow: 0 0 20px $basewhite;
+  display: inline-block;
+}
+
+.twitter__link:hover .twitter__icon,
+.twitter__link:focus .twitter__icon {
+  fill: $basered;
+}
+
+@media (min-width: $tabletwidth) {
+  .twitter__text {
+    width: 60%;
+  }
+
+  .twitter__layout {
+    fill: $lightgrey;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media (min-width: $desktopwidth) {
+  .twitter__layout {
+    fill: $lightgrey;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}

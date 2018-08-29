@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 88 77" width="88" height="77">
+	<symbol id="hexagon-white"><path d="M66,77l22,-38l-22,-38h-44l-22,38l22,38z" fill="white" stroke="white" stroke-width="2" /></symbol>
+	<symbol id="hexagon-red"><path d="M66,77l22,-38l-22,-38h-44l-22,38l22,38z" fill="red" stroke="red" stroke-width="2" /></symbol>
+	<symbol id="hexagon-border"><path d="M66,77l22,-38l-22,-38h-44l-22,38l22,38z" fill="none" stroke="red" stroke-width="2" /></symbol>
+</svg>

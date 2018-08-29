@@ -1,0 +1,101 @@
+.menu {
+  padding: 20px 0 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &--main {
+    justify-content: flex-end;
+  }
+
+  &--simple {
+    margin: 0 auto;
+  }
+}
+
+.menu__item {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.menu__link {
+  display: block;
+  color: darken($basewhite, 30%);
+  background-color: black;
+  padding: 16px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: $ralewayfont;
+  text-align: center;
+
+
+  &:hover,
+  &:focus {
+    color: $basered;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.menu--main .menu__link {
+  &--current {
+    color: $basewhite;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      width: auto;
+      height: 2px;
+      background-color: $basered;
+      left: 0;
+      right: 0;
+      margin: 0 25px;
+    }
+
+    &::before {
+      top: 0;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+}
+
+.menu--simple .menu__link {
+  color: $lightgrey;
+
+  &--current {
+    color: $basered;
+  }
+}
+
+
+@media (min-width: $tabletwidth) {
+  .menu__width {
+    width: auto;
+  }
+
+  .menu__item {
+    width: auto;
+  }
+
+  .menu__link {
+    display: inline-block;
+    vertical-align: baseline;
+    width: auto;
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktopwidth) {
+  .menu__link {
+    padding: 16px;
+    font-size: 18px;
+  }
+}

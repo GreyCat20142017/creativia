@@ -1,0 +1,106 @@
+$indisize: 200px;
+$indipadding: 10px;
+$inditotal: $indisize + $indipadding;
+
+.indicator {
+  padding: $indipadding;
+  color: $middlegrey;
+}
+
+.indicator__title {
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $ralewayfont;
+  font-size: 20px;
+}
+
+.indicator__scale {
+  @include fix-IE-bug($indisize);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $indisize;
+  min-height: $indisize;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url("../img/circle.svg");
+  background-size: $indisize $indisize;
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-origin: border-box;
+  border-radius: 50%;
+  font-size: 30px;
+  font-family: "Arial", sans-serif;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("../img/circle-red.svg");
+    background-size: $indisize $indisize;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-origin: border-box;
+  }
+}
+
+.indicator__scale--100::after {
+  width: 100%;
+}
+
+.indicator__scale--90::after {
+  width: 90%;
+}
+
+.indicator__scale--80::after {
+  width: 80%;
+}
+
+.indicator__scale--70::after {
+  width: 70%;
+}
+
+.indicator__scale--60::after {
+  width: 60%;
+}
+
+.indicator__scale--50::after {
+  width: 50%;
+}
+
+.indicator__scale--40::after {
+  width: 40%;
+}
+
+.indicator__scale--30::after {
+  width: 30%;
+}
+
+.indicator__scale--20::after {
+  width: 20%;
+}
+
+.indicator__scale--10::after {
+  width: 10%;
+}
+
+.indicator__scale--00::after {
+  width: 0%;
+}
+
+.indicator__text {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: $latofont;
+  font-size: 16px;
+  line-height: 18px;
+}

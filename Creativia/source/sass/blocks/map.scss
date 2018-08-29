@@ -1,0 +1,94 @@
+.map__wrapper {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 575px;
+  padding: 20px;
+  background-color: $cardbeige;
+}
+
+.map__picture,
+.map__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.map__address {
+  position: relative;
+  width: 320px;
+  min-height: 160px;
+  margin: 20px auto 50px;
+  padding: 34px 24px;
+  font-size: 16px;
+  line-height: 36px;
+  font-family: $latofont;
+  color: $basewhite;
+  background-color: $almostblack;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -25px;
+    width: 0;
+    height: 0;
+    border: 25px solid;
+    border-color: transparent transparent transparent $almostblack;
+    transform: rotate(20deg) scaleY(2) scaleX(0.6);
+  }
+}
+
+.map__info {
+  margin: 0;
+  padding: 0;
+}
+
+.map__email {
+  color: $basewhite;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: red;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+.map__form {
+  position: relative;
+  margin: auto;
+  width: 320px;
+}
+
+@media (min-width: $tabletwidth) {
+  .map__address {
+    width: 300px;
+    margin: 70px auto 10px;
+  }
+
+  .map__form {
+    width: 350px;
+  }
+}
+
+@media (min-width: $desktopwidth) {
+  .map__wrapper {
+    padding: 100px 250px 0;
+  }
+
+  .map__form {
+    width: 500px;
+  }
+}

@@ -1,0 +1,33 @@
+.field {
+  display: flex;
+  margin: 15px 0;
+  padding: 10px 10px;
+  font-family: $latofont;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.field__label {
+  display: none;
+}
+
+.field__input {
+  width: 100%;
+  font: inherit;
+  border: 1px solid $lightgrey;
+  color: $middlegrey;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $almostblack;
+    color: $almostblack;
+    outline: none;
+    box-shadow: none;
+  }
+
+  &:invalid {
+    border: 1px solid $basered;
+    color: $basered;
+    outline: none;
+  }
+}

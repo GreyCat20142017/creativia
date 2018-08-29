@@ -1,0 +1,95 @@
+.person {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: $darkgrey;
+  text-decoration: none;
+  word-wrap: break-word;
+  box-shadow: 0 0 1px grey;
+  cursor: pointer;
+}
+
+.person__name {
+  margin: auto 0 10px;
+  padding: 0 10px;
+  font-size: 20px;
+  font-family: $ralewayfont;
+  text-transform: uppercase;
+}
+
+.person__description {
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: $latofont;
+}
+
+.person__info {
+  position: relative;
+  order: -2;
+  min-height: 240px;
+  padding: 100px 20px;
+  background-color: transparent;
+}
+
+.person__social {
+  position: relative;
+  z-index: 1;
+  width: 160px;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+.person__image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 270px;
+  max-height: 240px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.person__link {
+  opacity: 0;
+}
+
+
+.person:hover,
+.person:focus {
+  box-shadow: 0 5px 5px 5px rgba(127, 127, 127, 0.3);
+}
+
+.person:hover .person__info,
+.person:focus .person__info {
+  background-color: $darkgrey;
+}
+
+.person:hover .person__image,
+.person:focus .person__image {
+  background-color: transparent;
+  opacity: 0;
+}
+
+
+.person:hover .person__link,
+.person:focus .person__link {
+  opacity: 1;
+}
+
+
+.person__link:hover,
+.person__link:focus {
+  opacity: 1;
+}
+
+
+.person:hover .person__name {
+  color: $basered;
+}
