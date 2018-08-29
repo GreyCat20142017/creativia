@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg"><symbol id="circle-red" viewBox="0 0 206 206">
+	<symbol id="circle-red"><circle cx="103" cy="103" r="100" fill="none" stroke-width="3" stroke="red"/></symbol>
+</symbol><symbol id="circle" viewBox="0 0 206 206">
+	<symbol id="circle"><circle cx="103" cy="103" r="100" fill="none" stroke-width="3" stroke="lightgrey"/></symbol>
+</symbol><symbol id="hexagon" viewBox="0 0 88 77">
+	<symbol id="hexagon-white"><path d="M66,77l22,-38l-22,-38h-44l-22,38l22,38z" fill="white" stroke="white" stroke-width="2"/></symbol>
+	<symbol id="hexagon-red"><path d="M66,77l22,-38l-22,-38h-44l-22,38l22,38z" fill="red" stroke="red" stroke-width="2"/></symbol>
+	<symbol id="hexagon-border"><path d="M66,77l22,-38l-22,-38h-44l-22,38l22,38z" fill="none" stroke="red" stroke-width="2"/></symbol>
+</symbol></svg>
