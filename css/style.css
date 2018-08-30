@@ -615,7 +615,7 @@ body {
     content: "";
     position: absolute;
     top: 8px;
-    left: 10px;
+    left: 11px;
     width: 20px;
     height: 20px;
     border-right: 4px solid #505050;
@@ -1975,7 +1975,6 @@ body {
             order: -1; } }
 
 .page {
-  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.2;
   font-weight: 400; }
