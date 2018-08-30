@@ -52,6 +52,7 @@
   },
   "version": "14.0.0",
   "dependencies": {
-    "gh-pages": "^1.2.0"
+    "gh-pages": "^1.2.0",
+    "hoek": "^5.0.4"
   }
 }
