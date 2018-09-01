@@ -1,0 +1,15 @@
+{
+  "short_name": "Creativia",
+  "name": "Верстка в целях самообразования по мотивам макета Creativia",
+  "icons": [
+    {
+      "src": "./favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "white",
+  "background_color": "white"
+}

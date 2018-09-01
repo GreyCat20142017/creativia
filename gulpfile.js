@@ -111,10 +111,15 @@ gulp.task('fonts', function () {
   .pipe(gulp.dest(currentProject+'build/fonts'));
 });
 
+gulp.task('public', function () {
+  return gulp.src(currentProject+'source/public/**/*.{json,png,ico}')
+  .pipe(gulp.dest(currentProject+'build/public'));
+});
+
 
 gulp.task('build', gulp.series(
     'clean',
-    gulp.parallel('fonts', 'style', 'js', 'images'),
+    gulp.parallel('fonts', 'style', 'js', 'images', 'public'),
     'sprite',
     'webp',
     'html'));

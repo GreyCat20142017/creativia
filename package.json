@@ -24,6 +24,7 @@
     "gulp-svgstore": "^6.1.1",
     "gulp-uglify": "^3.0.0",
     "gulp-webp": "^3.0.0",
+    "hoek": "^5.0.4",
     "posthtml-include": "^1.1.0",
     "stylelint": "9.2.x",
     "stylelint-config-htmlacademy": "0.1.x"
@@ -52,7 +53,6 @@
   },
   "version": "14.0.0",
   "dependencies": {
-    "gh-pages": "^1.2.0",
-    "hoek": "^5.0.4"
+    "gh-pages": "^1.2.0"
   }
 }
